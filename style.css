@@ -94,6 +94,8 @@ body {
     cursor: pointer;
     padding: 1rem;
     z-index: 1001;
+    position: relative;
+    pointer-events: auto;
 }
 
 .hamburger span {
@@ -145,8 +147,6 @@ body {
     white-space: nowrap;
     overflow: hidden;
 }
-
-
 
 /* Home Section */
 #home {
@@ -308,7 +308,7 @@ body.dark-mode .hero-text h3 {
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
 }
 
@@ -320,6 +320,7 @@ body.dark-mode .hero-text h3 {
     transition: var(--transition);
     display: flex;
     flex-direction: column;
+    min-height: 20rem;
 }
 
 .project-card:hover {
@@ -366,6 +367,150 @@ body.dark-mode .hero-text h3 {
 
 .project-link:hover {
     background-color: var(--secondary-color);
+}
+
+/* Certificates Section */
+#certificates {
+    background: linear-gradient(135deg, rgba(255,62,109,0.1) 0%, rgba(0,200,255,0.1) 100%);
+}
+
+.certificates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-category {
+    margin-bottom: 5rem;
+}
+
+.certificate-category h3 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.certificate-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 5rem;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.certificate-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.certificate-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    min-height: 35rem;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.certificate-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+}
+
+.certificate-card h4 {
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.certificate-card p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.certificate-preview {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.certificate-preview:hover {
+    opacity: 0.9;
+}
+
+.certificate-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: var(--transition);
+    align-self: flex-start;
+}
+
+.certificate-link:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Certificate Modal */
+.certificate-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-modal .modal-content {
+    max-width: 90%;
+    max-height: 80vh;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.certificate-modal .close-modal {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.certificate-modal .close-modal:hover {
+    color: var(--secondary-color);
 }
 
 /* Contact Section */
@@ -539,13 +684,14 @@ body.dark-mode .hero-text h3 {
         justify-content: center;
         gap: 5rem;
         transition: var(--transition);
+        z-index: 1000;
     }
     
     #options.active {
         left: 0;
     }
     
-    .project-cards {
+    .project-cards, .certificate-cards {
         grid-template-columns: 1fr;
     }
     
@@ -582,6 +728,10 @@ body.dark-mode .hero-text h3 {
     .footer-links {
         flex-direction: column;
         gap: 1.5rem;
+    }
+    
+    .certificate-preview {
+        height: 12rem;
     }
 }
 
@@ -641,7 +791,9 @@ body.dark-mode .main-page:not(#home) {
 }
 
 body.dark-mode .project-card,
+body.dark-mode .certificate-card,
 body.dark-mode #about,
+body.dark-mode #certificates,
 body.dark-mode #hire {
     background-color: #2d2d2d;
     color: #e0e0e0;
@@ -650,12 +802,14 @@ body.dark-mode #hire {
 
 body.dark-mode .about-text p,
 body.dark-mode .project-card p,
+body.dark-mode .certificate-card p,
 body.dark-mode .contact-container p {
     color: #b0b0b0;
 }
 
 body.dark-mode .section-title,
-body.dark-mode .project-card h4 {
+body.dark-mode .project-card h4,
+body.dark-mode .certificate-card h4 {
     color: #ffffff;
 }
 
@@ -663,11 +817,12 @@ body.dark-mode .skills span {
     background-color: #00a8cc;
 }
 
-body.dark-mode .project-link {
+body.dark-mode .project-link,
+body.dark-mode .certificate-link {
     background-color: #00a8cc;
 }
 
-body.dark-mode .social-links a{
+body.dark-mode .social-links a {
     color: #ffffff !important;
 }
 
@@ -688,6 +843,7 @@ body.dark-mode .hero-text h3::after {
     background: linear-gradient(90deg, #00c8ff, #ff3e6d);
 }
 
-body.dark-mode .project-category h3{
+body.dark-mode .project-category h3,
+body.dark-mode .certificate-category h3 {
     color: #ffffff !important;
 }
