@@ -3,297 +3,560 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lav Kush</title>
+    <title>Lav Kush - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Navigation -->
     <nav class="navbar">
-        <div id="title">
-            <h1>Lav Kush</h1>
-        </div>
-        <button class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div id="options">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#hire">Contact</a>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-bracket">&lt;</span>
+                <span class="brand-name">LavKush</span>
+                <span class="brand-bracket">/&gt;</span>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <span class="nav-number">01.</span>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-number">02.</span>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="nav-number">03.</span>
+                    <span>Projects</span>
+                </a>
+                <a href="#certificates" class="nav-link">
+                    <span class="nav-number">04.</span>
+                    <span>Certificates</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="nav-number">05.</span>
+                    <span>Contact</span>
+                </a>
+            </div>
         </div>
     </nav>
 
-    <section id="home" class="main-page">
-        <div class="hero-content">
-            <img src="/images/Lav Profile.png" alt="Profile Picture" id="pfp-home">
-            <div class="hero-text">
-                <h2>Lav Kush</h2>
-                <h3 id="typing-text">FrontEnd Web Developer | Python Developer | Campus Ambassador @ PW</h3>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hi, my name is</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-highlight">Lav Kush</span>
+                </h1>
+                <h2 class="hero-title">
+                    <span id="typing-text">I build things for the web.</span>
+                </h2>
+                <p class="hero-description">
+                    I'm a passionate full-stack developer specializing in building exceptional digital experiences. 
+                    Currently focused on creating innovative web applications with modern technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="cta-button primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="cta-button secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="window-title">developer.js</div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="line-number">1</span><span class="keyword">const</span> <span class="variable">developer</span> = {
+<span class="line-number">2</span>  <span class="property">name</span>: <span class="string">'Lav Kush'</span>,
+<span class="line-number">3</span>  <span class="property">skills</span>: [<span class="string">'JavaScript'</span>, <span class="string">'Python'</span>, <span class="string">'React'</span>],
+<span class="line-number">4</span>  <span class="property">passion</span>: <span class="string">'Building amazing things'</span>,
+<span class="line-number">5</span>  <span class="property">location</span>: <span class="string">'India'</span>
+<span class="line-number">6</span>};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    About Me
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Lav Kush, an engineering student at IET(DSMNRU) pursuing B.Tech in CSE(AIFM). 
+                        My journey into web development started during my college years, and I've been passionate 
+                        about creating digital solutions ever since.
+                    </p>
+                    <p>
+                        I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not 
+                        coding, you'll find me exploring new technologies, contributing to open-source projects, 
+                        or sharing knowledge with the developer community.
+                    </p>
+                    <p>Here are a few technologies I've been working with recently:</p>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="/images/Lav pf2.jpg" alt="Lav Kush" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Featured Projects
+                </h2>
+                <p class="section-subtitle">Some things I've built</p>
+            </div>
+            
+            <!-- Featured Projects -->
+            <div class="featured-projects">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="/error/error.html" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amazon Clone">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Amazon Clone</h3>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A pixel-perfect clone of Amazon's homepage featuring responsive design, 
+                            interactive elements, and modern CSS techniques. Built with vanilla HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="/error/error.html" class="project-link" aria-label="View project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Netflix Clone">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Netflix Clone</h3>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>CSS</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Complete Netflix streaming platform interface clone with dynamic content loading, 
+                            responsive carousel, and modern UI/UX design patterns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="other-projects">
+                <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://rockpaperrock.netlify.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Rock Paper Scissors</h4>
+                        <p class="project-description">Interactive game with live scoring and smooth animations.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://c4calculator.netlify.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Calculator</h4>
+                        <p class="project-description">Functional calculator with responsive design and keyboard support.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://c2currency.netlify.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Currency Converter</h4>
+                        <p class="project-description">Real-time currency conversion using exchange rate APIs.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://weather-ctor.netlify.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Weather App</h4>
+                        <p class="project-description">Weather information with detailed forecasts and location search.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://url-shorten.streamlit.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">URL Shortener</h4>
+                        <p class="project-description">Python-based web app for converting long URLs into short links.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://lavbot.streamlit.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">AI Chatbot</h4>
+                        <p class="project-description">Intelligent chatbot powered by Google's Gemini AI model.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini API</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Certificates & Achievements
+                </h2>
+            </div>
+            
+            <div class="certificates-tabs">
+                <button class="tab-button active" data-tab="hackathons">Hackathons</button>
+                <button class="tab-button" data-tab="courses">Courses & Recognition</button>
+            </div>
+
+            <div class="certificates-content">
+                <div class="tab-content active" id="hackathons">
+                    <div class="certificates-grid">
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="/images/AIF-Hackathon.jpg" alt="AI Finance Hackathon Certificate">
+                                <div class="certificate-overlay">
+                                    <button class="view-certificate" data-image="/images/AIF-Hackathon.jpg">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3>AI Finance Hackathon</h3>
+                                <p class="certificate-issuer">TechKriti (IIT Kanpur)</p>
+                                <p class="certificate-description">Participated in AI-focused hackathon developing innovative financial solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="/images/ISTD.png" alt="ISTD Online Hackathon Certificate">
+                                <div class="certificate-overlay">
+                                    <button class="view-certificate" data-image="/images/ISTD.png">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3>ISTD Online Hackathon</h3>
+                                <p class="certificate-issuer">Lets Upgrade</p>
+                                <p class="certificate-description">Competed in online hackathon focusing on innovative tech solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="/images/HP_Cert.jpg" alt="HP Power Lab Certificate">
+                                <div class="certificate-overlay">
+                                    <button class="view-certificate" data-image="/images/HP_Cert.jpg">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3>HP Power Lab</h3>
+                                <p class="certificate-issuer">Hindustan Petroleum & Unstop</p>
+                                <p class="certificate-description">Participated in energy sector innovation challenge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="courses">
+                    <div class="certificates-grid">
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="/images/Hack2skill-Certificate.png" alt="Chatbot Development Certificate">
+                                <div class="certificate-overlay">
+                                    <button class="view-certificate" data-image="/images/Hack2skill-Certificate.png">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3>Interactive Chatbot Development</h3>
+                                <p class="certificate-issuer">Hack2skill</p>
+                                <p class="certificate-description">Building Interactive Chatbot with React JS & GPT API</p>
+                            </div>
+                        </div>
+
+                        <div class="certificate-card">
+                            <div class="certificate-image">
+                                <img src="/images/wcc.png" alt="Certificate of Excellence">
+                                <div class="certificate-overlay">
+                                    <button class="view-certificate" data-image="/images/wcc.png">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3>Certificate of Excellence</h3>
+                                <p class="certificate-issuer">Unstop</p>
+                                <p class="certificate-description">Recognition for outstanding performance in competitive programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    Get In Touch
+                </h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Let's build something amazing together</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                </div>
+                <div class="contact-methods">
+                    <a href="mailto:kush210431@gmail.com" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Email</h4>
+                            <p>kush210431@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+916394214116" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Phone</h4>
+                            <p>+91 6394214116</p>
+                        </div>
+                    </a>
+                    <a href="https://t.me/Lav_kushbot" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Telegram</h4>
+                            <p>@Lav_kushbot</p>
+                        </div>
+                    </a>
+                </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/lavkush-iet/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Lav-developer"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/Lavkush_iet"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/lavkush-iet/" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Lav-developer" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/Lavkush_iet" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="main-page">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <img src="/images/Lav pf2.jpg" alt="About Picture" id="pfp-about">
-            <div class="about-text">
-                <p>Hi, I'm Lav Kush, an engineering student at IET(DSMNRU) pursuing B.Tech in CSE(AIFM). Originally from Rath, Hamirpur, I completed both my 10th and 12th standards in my hometown.</p>
-                <p>I'm passionate about web development, software development, Business development and continuously expanding my skill set. Currently proficient in HTML, CSS, JavaScript, Python and C language. I'm enhancing my expertise in Java while working on various projects to sharpen my abilities.</p>
-                <div class="skills">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Python</span>
-                    <span>C#</span>
-                    <span>Java</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="main-page">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-container">
-            <div class="project-category">
-                <h3>Major Projects</h3>
-                <div class="project-cards">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-shopping-cart project-icon"></i>
-                            <h4>Amazon Clone</h4>
-                        </div>
-                        <p>A clone homepage of amazon.com built with pure HTML and CSS.</p>
-                        <a href="/error/error.html" class="project-link">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-film project-icon"></i>
-                            <h4>Netflix Clone</h4>
-                        </div>
-                        <p>Complete clone of Netflix's streaming platform interface.</p>
-                        <a href="/error/error.html" class="project-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-category">
-                <h3>Minor Projects</h3>
-                <div class="project-cards">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-gamepad project-icon"></i>
-                            <h4>Rock Paper Scissors</h4>
-                        </div>
-                        <p>Interactive game to play against computer with live scoring.</p>
-                        <a href="https://rockpaperrock.netlify.app/" class="project-link">Play Game</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-calculator project-icon"></i>
-                            <h4>Calculator</h4>
-                        </div>
-                        <p>Functional calculator with basic math operations and responsive design.</p>
-                        <a href="https://c4calculator.netlify.app/" class="project-link">Use Calculator</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-exchange-alt project-icon"></i>
-                            <h4>Currency Converter</h4>
-                        </div>
-                        <p>Real-time currency conversion using exchange rate APIs.</p>
-                        <a href="https://c2currency.netlify.app/" class="project-link">Convert Currency</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-cloud-sun project-icon"></i>
-                            <h4>Weather App</h4>
-                        </div>
-                        <p>Weather information for any location with detailed forecasts.</p>
-                        <a href="https://weather-ctor.netlify.app/" class="project-link">Check Weather</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-link project-icon"></i>
-                            <h4>Link Shortner</h4>
-                        </div>
-                        <p>A Python Based Website that convert long urls into short urls.</p>
-                        <a href="https://url-shorten.streamlit.app/" class="project-link">Short Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-university project-icon"></i>
-                            <h4>Code Venom</h4>
-                        </div>
-                        <p>A College Club Website.</p>
-                        <a href="https://codevenom.netlify.app/" class="project-link">Visit Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-book project-icon"></i>
-                            <h4>DSMNRU PYQs</h4>
-                        </div>
-                        <p>Dr. Shakuntala Misra National Rehabilitation University Lucknow PYQs Finder Website.</p>
-                        <a href="https://dsmnru-pyq.netlify.app/" class="project-link">Search Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-phone project-icon"></i>
-                            <h4>Phone Number Lookup</h4>
-                        </div>
-                        <p>This web app based on basically on the phone number lookup technique. It helps to search about the number it is spam or not.</p>
-                        <a href="https://phone-check.streamlit.app/" class="project-link">Check Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-video project-icon"></i>
-                            <h4>Insta Reel Downloader</h4>
-                        </div>
-                        <p>Dwonload any instagram reel just pasting the link of reel. no need to download instagram. Preview also available before downloading.</p>
-                        <a href="https://lavgram.streamlit.app/" class="project-link">Download Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-qrcode project-icon"></i>
-                            <h4>Qr Code Generator</h4>
-                        </div>
-                        <p>This tool help to create any qr. which is secure. any type of data can be shared through qr data may be WIFI,Email,SMS anything.</p>
-                        <a href="https://qr-generate.streamlit.app/" class="project-link">Generate Now</a>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-header">
-                            <i class="fas fa-fan project-icon"></i>
-                            <h4>Chatbot</h4>
-                        </div>
-                        <p>A chatbot which is based on Google's gemini model made it using gemini API </p>
-                        <a href="https://lavbot.streamlit.app/" class="project-link">Ask Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificates" class="main-page">
-        <h2 class="section-title">My Certificates</h2>
-        <div class="certificates-container">
-            <div class="certificate-category">
-                <h3>Hackathons</h3>
-                <div class="certificate-cards">
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>AI Finance Hackathon</h4>
-                        </div>
-                        <p>Issued by TechKriti (IIT Kanpur)</p>
-                        <img src="/images/AIF-Hackathon.jpg" alt="AI Finance Hackathon Certificate" class="certificate-preview">
-                        <a href="/images/AIF-Hackathon.jpg" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>ISTD Online Hackathon</h4>
-                        </div>
-                        <p>Issued by Lets Upgrade</p>
-                        <img src="/images/ISTD.png" alt="ISTD Online Hackathon Certificate" class="certificate-preview">
-                        <a href="/images/ISTD.png" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>ISVE Hackathon</h4>
-                        </div>
-                        <p>Issued by ISVE</p>
-                        <img src="/images/ISVE.png" alt="ISVE Hackathon Certificate" class="certificate-preview">
-                        <a href="/images/ISVE.png" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>HP Power Lab</h4>
-                        </div>
-                        <p>Issued by Hindustan Petroleum Corporation Ltd. & Unstop</p>
-                        <img src="/images/HP_Cert.jpg" alt="HP Power Lab Certificate" class="certificate-preview">
-                        <a href="/images/HP_Cert.jpg" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                </div>
-            </div>
-            <div class="certificate-category">
-                <h3>Courses & Recognitions</h3>
-                <div class="certificate-cards">
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>Building Interactive Chatbot with React JS & GPT API</h4>
-                        </div>
-                        <p>Issued by Hack2skill</p>
-                        <img src="/images/Hack2skill-Certificate.png" alt="Building Interactive Chatbot Certificate" class="certificate-preview">
-                        <a href="/images/Hack2skill-Certificate.png" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>Certificate of Excellence</h4>
-                        </div>
-                        <p>Issued by Unstop</p>
-                        <img src="/images/wcc.png" alt="Certificate of Excellence" class="certificate-preview">
-                        <a href="/images/wcc.png" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                    <div class="certificate-card">
-                        <div class="certificate-header">
-                            <i class="fas fa-certificate certificate-icon"></i>
-                            <h4>Certificate of Participation</h4>
-                        </div>
-                        <p>Issued by Unstop</p>
-                        <img src="/images/Tresure_hunt.jpg" alt="Certificate of Participation" class="certificate-preview">
-                        <a href="/images/Tresure_hunt.jpg" class="certificate-link" target="_blank">View Certificate</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="hire" class="main-page">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <p>If you're interested in my work and think I'd be a good fit for your team, I'd love to hear from you!</p>
-            <div class="contact-buttons">
-                <a href="mailto:kush210431@gmail.com" class="contact-btn email"><i class="fas fa-envelope"></i> Email Me</a>
-                <a href="tel:+916394214116" class="contact-btn call"><i class="fas fa-phone"></i> Call Me</a>
-                <a href="https://t.me/Lav_kushbot" class="contact-btn telegram"><i class="fab fa-telegram"></i> Message Me</a>
-            </div>
-            <p class="contact-alternative">Or fill out the contact form:</p>
-            <a href="/form/form.html" class="form-link">Contact Form</a>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-        <h2>Lav Kush</h2>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#hire">Contact</a>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Lav Kush. Built with ❤️ and lots of ☕</p>
+                <p class="footer-tech">Designed & Built by Lav Kush</p>
+            </div>
         </div>
-        <div class="footer-social">
-            <a href="https://www.linkedin.com/in/lavkush-iet/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Lav-developer"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/Lavkush_iet"><i class="fab fa-twitter"></i></a>
-        </div>
-        <p>© <span id="year"></span> All rights reserved by Lav Kush.</p>
     </footer>
 
-    <div id="certificate-modal" class="certificate-modal">
-        <span class="close-modal">×</span>
-        <img class="modal-content" id="modal-image">
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="Certificate">
+        </div>
     </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
