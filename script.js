@@ -399,10 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const typingElement = document.getElementById('typing-text');
     if (typingElement) {
         new TypingAnimation(typingElement, [
-            'I build things for the web.',
-            'I create digital experiences.',
-            'I solve problems with code.',
-            'I bring ideas to life.'
+            'Web Developer',
+            'Creative Coder',
+            'Campus Ambassador @ PW',
+            'Campus Ambassador @ GSSoC2025',
         ]);
     }
     
