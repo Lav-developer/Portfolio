@@ -144,6 +144,8 @@ class MobileMenu {
         this.hamburger.addEventListener('click', () => {
             this.hamburger.classList.toggle('active');
             this.navMenu.classList.toggle('active');
+            const expanded = this.hamburger.classList.contains('active');
+            this.hamburger.setAttribute('aria-expanded', expanded ? 'true' : 'false');
         });
         
         this.navLinks.forEach(link => {
@@ -158,6 +160,7 @@ class MobileMenu {
             if (!this.hamburger.contains(e.target) && !this.navMenu.contains(e.target)) {
                 this.hamburger.classList.remove('active');
                 this.navMenu.classList.remove('active');
+                this.hamburger.setAttribute('aria-expanded', 'false');
             }
         });
     }
@@ -244,13 +247,30 @@ class CertificateModal {
             button.addEventListener('click', () => {
                 const imageSrc = button.getAttribute('data-image');
                 this.modalImage.src = imageSrc;
-                this.modal.style.display = 'block';
+                // Track and restore focus
+                this.lastFocused = document.activeElement;
+                // open modal via class so CSS transitions run
+                this.modal.classList.add('open');
+                this.modal.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';
+                // ensure close button gets focus for keyboard users
+                setTimeout(() => {
+                    if (this.closeBtn) this.closeBtn.focus();
+                }, 50);
+                // attach focus trap
+                this._bindFocusTrap();
             });
         });
         
         this.closeBtn.addEventListener('click', () => {
             this.closeModal();
+        });
+        // allow keyboard activation of close button
+        this.closeBtn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.closeModal();
+            }
         });
         
         this.modal.addEventListener('click', (e) => {
@@ -261,14 +281,56 @@ class CertificateModal {
         
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
-                this.closeModal();
+                // If modal open, close it
+                if (this.modal.classList.contains('open')) this.closeModal();
             }
         });
     }
     
     closeModal() {
-        this.modal.style.display = 'none';
+        // remove focus trap first
+        this._unbindFocusTrap();
+        this.modal.classList.remove('open');
+        this.modal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = 'auto';
+        // restore focus to previously focused element
+        try {
+            if (this.lastFocused) this.lastFocused.focus();
+        } catch (e) {
+            // ignore
+        }
+    }
+
+    /* Focus trap helpers */
+    _bindFocusTrap() {
+        this._handleKeydown = (e) => {
+            if (e.key === 'Tab') {
+                const focusable = this.modal.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])');
+                const nodes = Array.prototype.slice.call(focusable).filter(n => n.offsetParent !== null);
+                if (nodes.length === 0) return;
+                const first = nodes[0];
+                const last = nodes[nodes.length - 1];
+                if (e.shiftKey) {
+                    if (document.activeElement === first) {
+                        e.preventDefault();
+                        last.focus();
+                    }
+                } else {
+                    if (document.activeElement === last) {
+                        e.preventDefault();
+                        first.focus();
+                    }
+                }
+            }
+        };
+        document.addEventListener('keydown', this._handleKeydown);
+    }
+
+    _unbindFocusTrap() {
+        if (this._handleKeydown) {
+            document.removeEventListener('keydown', this._handleKeydown);
+            this._handleKeydown = null;
+        }
     }
 }
 
@@ -421,12 +483,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Preload images
     const images = [
-        '/images/Lav pf2.jpg',
-        '/images/AIF-Hackathon.jpg',
-        '/images/ISTD.png',
-        '/images/HP_Cert.jpg',
-        '/images/Hack2skill-Certificate.png',
-        '/images/wcc.png'
+        'images/Lav pf2.jpg',
+        'images/AIF-Hackathon.jpg',
+        'images/ISTD.png',
+        'images/HP_Cert.jpg',
+        'images/Hack2skill-Certificate.png',
+        'images/wcc.png'
     ];
     
     images.forEach(src => {
