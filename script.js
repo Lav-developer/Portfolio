@@ -463,8 +463,8 @@ document.addEventListener('DOMContentLoaded', () => {
         new TypingAnimation(typingElement, [
             'Web Developer',
             'Creative Coder',
-            'Campus Ambassador @ PW',
-            'Campus Ambassador @ GSSoC2025',
+            'CA @ PW',
+            'Java Developer',
         ]);
     }
     
