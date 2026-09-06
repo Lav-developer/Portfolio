@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lav Kush - Full Stack Developer</title>
+    <title>Lav Kush | AI & Full-Stack Developer</title>
+    <meta name="description" content="Lav Kush — B.Tech CSE (AI & Financial Management) student, AI / Full-Stack Developer building AI-powered products, automation systems, and production-oriented web applications. Python, Java, JavaScript, Node.js, APIs, real-time systems.">
+    <meta name="author" content="Lav Kush">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="keywords" content="Lav Kush, AI Developer, Full-Stack Developer, Python, Java, JavaScript, Automation, Backend Developer, Portfolio">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lav Kush | AI & Full-Stack Developer">
+    <meta property="og:description" content="I build AI-powered products and automation systems. B.Tech CSE (AI & FM) — Python, Java, JavaScript, backend & real-time systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lavdeveloper.dev">
+    <meta property="og:image" content="images/Lav pf2.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lav Kush | AI & Full-Stack Developer">
+    <meta name="twitter:description" content="AI / Full-Stack Developer building AI-powered products, automation systems, and production-oriented web applications.">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&lt;/&gt;</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Matrix Background -->
-    <canvas id="matrix-canvas"></canvas>
-    
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
-            <div class="nav-brand">
+            <a href="#home" class="nav-brand" aria-label="Home">
                 <span class="brand-bracket">&lt;</span>
                 <span class="brand-name">Lav Kush</span>
                 <span class="brand-bracket">/&gt;</span>
-            </div>
+            </a>
             <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <div id="nav-menu" class="nav-menu">
-                <a href="#home" class="nav-link">
-                    <span>Home</span>
-                </a>
-                <a href="#about" class="nav-link">
-                    <span>About</span>
-                </a>
-                <a href="#projects" class="nav-link">
-                    <span>Projects</span>
-                </a>
-                <a href="#certificates" class="nav-link">
-                    <span>Certificates</span>
-                </a>
-                <a href="#contact" class="nav-link">
-                    <span>Contact</span>
-                </a>
+                <a href="#home" class="nav-link"><span class="nav-number">01</span><span>Home</span></a>
+                <a href="#about" class="nav-link"><span class="nav-number">02</span><span>About</span></a>
+                <a href="#skills" class="nav-link"><span class="nav-number">03</span><span>Skills</span></a>
+                <a href="#experience" class="nav-link"><span class="nav-number">04</span><span>Experience</span></a>
+                <a href="#projects" class="nav-link"><span class="nav-number">05</span><span>Projects</span></a>
+                <a href="#certificates" class="nav-link"><span class="nav-number">06</span><span>Certificates</span></a>
+                <a href="#contact" class="nav-link"><span class="nav-number">07</span><span>Contact</span></a>
             </div>
         </div>
     </nav>
@@ -57,45 +62,65 @@
                 <h1 class="hero-name">
                     <span class="name-highlight">Lav Kush</span>
                 </h1>
-                <h2 class="hero-title">
-                    <span id="typing-text">I build things for the web.</span>
+                <h2 class="hero-headline">
+                    I build AI-powered products and automation systems.
                 </h2>
+                <div class="hero-typing">
+                    <span class="typing-prefix">//</span>
+                    <span id="typing-text" aria-live="polite"></span>
+                </div>
                 <p class="hero-description">
-                    I'm a passionate full-stack developer, Java developer specializing in building exceptional digital experiences. 
-                    Currently focused on creating innovative web applications with modern technologies.
+                    B.Tech CSE (AI & Financial Management) @ IET DSMNRU, graduating 2028. I build practical software combining AI, automation, APIs and full-stack engineering — from backend systems and real-time apps to AI-powered products that solve real problems.
                 </p>
+                <div class="hero-meta">
+                    <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Lucknow, India</span>
+                    <span class="meta-item"><i class="fas fa-graduation-cap"></i> B.Tech CSE (AI & FM) — 2028</span>
+                    <span class="meta-item"><i class="fas fa-circle" style="color: var(--success); font-size: 8px;"></i> Open to internships & collaborations</span>
+                </div>
                 <div class="hero-cta">
                     <a href="#projects" class="cta-button primary">
-                        <span>View My Work</span>
+                        <span>View Projects</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#contact" class="cta-button secondary">
-                        <span>Get In Touch</span>
+                    <a href="https://github.com/Lav-developer" target="_blank" rel="noopener noreferrer" class="cta-button secondary">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#contact" class="cta-button ghost">
+                        <span>Contact</span>
                     </a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="code-window">
+                <div class="code-window" role="region" aria-label="Developer profile code">
                     <div class="window-header">
-                        <div class="window-controls">
+                        <div class="window-controls" aria-hidden="true">
                             <span class="control close"></span>
                             <span class="control minimize"></span>
                             <span class="control maximize"></span>
                         </div>
                         <div class="window-title">developer.js</div>
+                        <div class="window-actions"><i class="fas fa-code"></i></div>
                     </div>
                     <div class="code-content">
                         <pre><code><span class="line-number">1</span><span class="keyword">const</span> <span class="variable">developer</span> = {
 <span class="line-number">2</span>  <span class="property">name</span>: <span class="string">'Lav Kush'</span>,
-<span class="line-number">3</span>  <span class="property">skills</span>: [<span class="string">'Python'</span>,<span class="string">'Java'</span>,<span class="string">'C'</span>],
-<span class="line-number">4</span>  <span class="property">passion</span>: <span class="string">'Building amazing things'</span>,
-<span class="line-number">5</span>  <span class="property">location</span>: <span class="string">'Lucknow, India'</span>
-<span class="line-number">6</span>};</code></pre>
+<span class="line-number">3</span>  <span class="property">role</span>: <span class="string">'AI / Full-Stack Developer'</span>,
+<span class="line-number">4</span>  <span class="property">focus</span>: [<span class="string">'AI'</span>, <span class="string">'Full-Stack'</span>, <span class="string">'Automation'</span>],
+<span class="line-number">5</span>  <span class="property">stack</span>: [<span class="string">'Python'</span>, <span class="string">'Java'</span>, <span class="string">'JavaScript'</span>],
+<span class="line-number">6</span>  <span class="property">building</span>: <span class="string">'AI-powered products'</span>,
+<span class="line-number">7</span>  <span class="property">learning</span>: <span class="string">'System Design & Cloud'</span>,
+<span class="line-number">8</span>  <span class="property">graduation</span>: <span class="string">2028</span>
+<span class="line-number">9</span>};</code></pre>
+                        <div class="code-footer">
+                            <span class="code-status"><i class="fas fa-circle"></i> Ready to build</span>
+                        </div>
                     </div>
                 </div>
+                <div class="hero-glow" aria-hidden="true"></div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" aria-hidden="true">
             <div class="scroll-line"></div>
             <span class="scroll-text">Scroll</span>
         </div>
@@ -105,56 +130,172 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">01.</span>
-                    About Me
-                </h2>
+                <h2 class="section-title"><span class="section-number">02.</span> About Me</h2>
+                <p class="section-subtitle">Engineer focused on practical software</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Hello! I'm Lav Kush, an engineering student at IET(DSMNRU) pursuing B.Tech in CSE(AIFM). 
-                        My journey into web development started during my college years, and I've been passionate 
-                        about creating digital solutions ever since.
+                        I'm <strong>Lav Kush</strong>, B.Tech CSE (AI & Financial Management) student at <strong>IET, DSMNRU Lucknow</strong>, graduating in <strong>2028</strong>. I focus on software engineering with an emphasis on AI-powered applications, full-stack systems, backend/API development, and automation.
                     </p>
                     <p>
-                        I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not 
-                        coding, you'll find me exploring new technologies, contributing to open-source projects, 
-                        or sharing knowledge with the developer community.
+                        I build production-oriented projects — from revenue recovery automation and route optimization to local commerce platforms and pharmacogenomic risk analysis. My approach is to combine Python, Java, JavaScript, and modern backend tools to ship usable software, not just demos.
                     </p>
-                    <p>Here are a few technologies I've been working with recently:</p>
-                    <div class="tech-grid">
-                        <div class="tech-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fab fa-c"></i>
-                            <span>C</span>
-                        </div>
-
+                    <p>
+                        Recently I've worked on event-driven notification services, multi-step loan application flows with dynamic validation, third-party API integrations, real-time communication with Socket.IO and JWT, and AI workflows using Gemini APIs. I'm learning system design, cloud architecture, and deployment best practices.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item"><i class="fas fa-check"></i><span>AI + Backend + Full-Stack — not just frontend</span></div>
+                        <div class="highlight-item"><i class="fas fa-check"></i><span>Real projects with DB, APIs, auth, and deployment</span></div>
+                        <div class="highlight-item"><i class="fas fa-check"></i><span>Internship experience in product engineering & real-time systems</span></div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="image-container">
-                        <img src="images/Lav pf2.jpg" alt="Lav Kush" class="profile-image" loading="lazy">
+                        <img src="images/Lav pf2.jpg" alt="Lav Kush — AI & Full-Stack Developer" class="profile-image" loading="lazy">
                         <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat"><span class="stat-number">4+</span><span class="stat-label">Internships</span></div>
+                        <div class="stat"><span class="stat-number">15+</span><span class="stat-label">Projects Built</span></div>
+                        <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Hackathons</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">03.</span> Tech Stack</h2>
+                <p class="section-subtitle">Technologies I actually use — verified by projects & internships</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-layer-group"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Socket.IO</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">Next.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Prisma</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-brain"></i> AI / Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Gemini API</span>
+                        <span class="skill-tag">LLM APIs</span>
+                        <span class="skill-tag">Python AI Tooling</span>
+                        <span class="skill-tag">VCF Parsing</span>
+                        <span class="skill-tag">Pharmacogenomics</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><i class="fas fa-tools"></i> Tools & Deployment</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Netlify</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Google Apps Script</span>
+                    </div>
+                </div>
+            </div>
+            <p class="skills-note">Only technologies backed by my repositories, internships, and deployed projects are listed. No buzzword padding.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">04.</span> Engineering Experience</h2>
+                <p class="section-subtitle">Internships where I shipped real features</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer Intern — Zetheta Algorithms Pvt. Ltd.</h3>
+                            <span class="timeline-meta">Backend • Product Engineering</span>
+                        </div>
+                        <p class="timeline-desc">Built multi-step loan application platform with dynamic validation, third-party API integrations (payment, customer verification), event-driven notification services, backend architecture, and disaster recovery concepts. Focused on reliability and auditability.</p>
+                        <div class="timeline-tech"><span>Java</span><span>APIs</span><span>Backend Architecture</span><span>Notifications</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Developer Intern — Labmentix</h3>
+                            <span class="timeline-meta">Sep 2025 – Oct 2025 • Remote</span>
+                        </div>
+                        <p class="timeline-desc">Developed real-time anonymous chat platform and other web apps. Implemented Socket.IO rooms, JWT authentication, server-side messaging, typing indicators, and file sharing. Worked on multiple projects in a 1-month intensive internship.</p>
+                        <div class="timeline-tech"><span>Node.js</span><span>Socket.IO</span><span>Express</span><span>JWT</span><span>Realtime</span></div>
+                        <a href="images/Lab_mentix_web_certifcate.png" class="timeline-link view-certificate" data-certificate="images/Lab_mentix_web_certifcate.png" aria-label="View Labmentix internship certificate">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Core Java Intern — Upskill Campus</h3>
+                            <span class="timeline-meta">Java • OOP • Data Structures</span>
+                        </div>
+                        <p class="timeline-desc">Strengthened core Java fundamentals, OOP principles, collections, and problem-solving. Built console and mini-projects to solidify backend foundations used in later full-stack work.</p>
+                        <div class="timeline-tech"><span>Java</span><span>OOP</span><span>DSA</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Marketing & Growth Team Lead — Gyaan-E / PhysicsWallah</h3>
+                            <span class="timeline-meta">Nov 2025 – Mar 2026</span>
+                        </div>
+                        <p class="timeline-desc">Led growth initiatives, peer guidance, and campus outreach. Recognized for leadership and ability to guide peers. Balanced technical studies with team leadership.</p>
+                        <div class="timeline-tech"><span>Leadership</span><span>Growth</span><span>Community</span></div>
+                        <a href="images/PW_internship.png" class="timeline-link view-certificate" data-certificate="images/PW_internship.png" aria-label="View PW internship certificate">View Certificate <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -165,339 +306,284 @@
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">02.</span>
-                    Featured Projects
-                </h2>
-                <p class="section-subtitle">Some things I've built</p>
+                <h2 class="section-title"><span class="section-number">05.</span> Featured Projects</h2>
+                <p class="section-subtitle">Engineering signal over quantity — strongest work first</p>
             </div>
-            
-            <!-- Featured Projects -->
+
             <div class="featured-projects">
-                <div class="project-card featured">
+                <!-- Revenue Recovery Autopilot -->
+                <article class="project-card featured">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Amazon Clone">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                            <span>Revenue Recovery</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Lav-developer/Revenue-Recovery-Autopilot" class="project-link" aria-label="View Revenue Recovery Autopilot on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Amazon Clone</h3>
+                            <div class="project-badge">AI / Automation • Featured</div>
+                            <h3 class="project-title">Revenue Recovery Autopilot</h3>
+                            <p class="project-one-liner">Bounded, auditable revenue-recovery engine for failed payments and checkout abandonment.</p>
                             <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                            <div class="project-links">
-                                        <a href="error/error.html" class="project-link" aria-label="View project" target="_blank" rel="noopener noreferrer">
-                                            <i class="fas fa-external-link-alt"></i>
-                                        </a>
-                                        <a href="https://github.com/Lav-developer/Amazon-Clone" class="project-link" aria-label="View code" target="_blank" rel="noopener noreferrer">
-                                            <i class="fab fa-github"></i>
-                                        </a>
+                                <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Tailwind</span><span>Razorpay (mock)</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            A pixel-perfect clone of Amazon's homepage featuring responsive design, 
-                            interactive elements, and modern CSS techniques. Built with vanilla HTML, CSS.
+                            Turns revenue events into recovery cases, scores context, generates LLM recommendations, and enforces deterministic policy & stopping rules before executing actions. Uses mock Razorpay provider for demo repeatability, persists outcomes with Prisma/PostgreSQL, and answers: how much revenue did the workflow actually recover. Demo mode runs 4 deterministic scenarios with metrics, funnel, and attribution dashboard.
                         </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Lav-developer/Revenue-Recovery-Autopilot" class="project-cta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            <span class="project-note">Demo mode • No real charges</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card featured">
+                </article>
+
+                <!-- RouteFind -->
+                <article class="project-card featured">
                     <div class="project-image">
-                        <img src="images/LocalKirana.png" alt="E-commerce Platform" loading="lazy">
+                        <div class="project-image-placeholder rail">
+                            <i class="fas fa-route"></i>
+                            <span>RouteFind</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Lav-developer/RouteFind" class="project-link" aria-label="View RouteFind on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">LocalKirana {Shop Management}</h3>
+                            <div class="project-badge">Backend • Optimization</div>
+                            <h3 class="project-title">RouteFind</h3>
+                            <p class="project-one-liner">Railway route finder computing optimized connections from local timetable data.</p>
                             <div class="project-tech">
-                                <span>HTML</span>
-                                <span>Python</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>MySql</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="error/error.html" class="project-link" aria-label="View project" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Lav-developer/LocalKirana" class="project-link" aria-label="View code" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                                <span>JavaScript</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>RailRadar API</span><span>PostgreSQL</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            LocalKirana is a comprehensive web platform that connects local kirana stores with customers, enabling shopkeepers to onboard their stores and customers to discover, browse, and book items from nearby stores.
+                            Full-stack route computation engine with Express backend and frontend. Computes viable train connections from local timetable/database to minimize transfers and time, using RailRadar API sparingly for validation/enrichment due to limited allowance — not per-train API calls. Focuses on data processing, optimization, and practical UX for real railway data.
                         </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Lav-developer/RouteFind" class="project-cta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            <span class="project-note">Local-first computation</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card featured">
+                </article>
+
+                <!-- LocalKirana -->
+                <article class="project-card featured">
                     <div class="project-image">
-                        <img src="images/TailorFind.png" alt="E-commerce Platform" loading="lazy">
+                        <img src="images/LocalKirana.png" alt="LocalKirana platform screenshot" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Lav-developer/LocalKirana" class="project-link" aria-label="View LocalKirana on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h3 class="project-title">Tailor-Find</h3>
+                            <div class="project-badge">Full-Stack • Commerce</div>
+                            <h3 class="project-title">LocalKirana — Shop Management</h3>
+                            <p class="project-one-liner">Local commerce platform connecting kirana stores with nearby customers.</p>
                             <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="error/error.html" class="project-link" aria-label="View project" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Lav-developer/Tailor-Find" class="project-link" aria-label="View code" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                                <span>JavaScript</span><span>Python</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>REST APIs</span>
                             </div>
                         </div>
                         <p class="project-description">
-                            Connect with skilled professionals for custom clothing, alterations, and repairs
+                            Customers discover nearby stores, browse products, reserve items, and request unavailable goods; shopkeepers onboard stores, manage inventory, and receive requests. Built with HTML/CSS/JS frontend and Python + MySQL backend. Includes store registration, product management, booking, and direct contact. Responsive, database-backed, production-minded.
                         </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Lav-developer/LocalKirana" class="project-cta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            <span class="project-note">Database-backed • Full-stack</span>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- PharmaGuard -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-image-placeholder pharma">
+                            <i class="fas fa-dna"></i>
+                            <span>PharmaGuard</span>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://pharma-rift.netlify.app/" class="project-link" aria-label="View PharmaGuard live demo" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Lav-developer/Pharma-guard" class="project-link" aria-label="View PharmaGuard on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-badge">AI • Healthcare • RIFT 2026</div>
+                            <h3 class="project-title">PharmaGuard</h3>
+                            <p class="project-one-liner">AI-powered pharmacogenomic risk analysis from VCF files and drug lists.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span><span>Express</span><span>Gemini API</span><span>Netlify Functions</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Parses VCF v4.2 with genotype-aware logic (FORMAT/GT), infers star-allele diplotypes, maps to phenotypes per CPIC, assesses drug risk, and generates clinical narratives via Gemini 2.5 Flash with rule-based fallback. Shared engine used by both Express server and Netlify Functions. Honest Unknown states, no fabricated data, XSS-safe rendering, export, dark mode. Built for RIFT 2026 hackathon.
+                        </p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Lav-developer/Pharma-guard" class="project-cta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://pharma-rift.netlify.app/" class="project-cta secondary" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <!-- Other Projects Grid -->
+            <!-- Other Projects -->
             <div class="other-projects">
-                <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                <h3 class="other-projects-title">More Things I've Built</h3>
+                <p class="other-projects-subtitle">Useful projects beyond the featured four — strongest signal retained, beginner demos omitted from spotlight.</p>
                 <div class="projects-grid">
-                    <div class="project-card mini">
+                    <article class="project-card mini">
                         <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
+                            <div class="project-icons"><i class="fas fa-comments"></i></div>
                             <div class="project-links">
-                                <a href="https://rockpaperrock.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="https://github.com/Lav-developer/Realtime-Agent" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Realtime Agent GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                        <h4 class="project-title">Rock Paper Scissors</h4>
-                        <p class="project-description">Interactive game with live scoring and smooth animations.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                            <span>HTML</span>
-                        </div>
-                    </div>
+                        <h4 class="project-title">Realtime Agent — Live Support</h4>
+                        <p class="project-description">Ephemeral weekend live-support platform. Host goes online, community joins General room, DMs, help requests, file sharing, presence, JWT host auth. Node.js + Socket.IO.</p>
+                        <div class="project-tech"><span>Node.js</span><span>Socket.IO</span><span>Express</span><span>JWT</span></div>
+                    </article>
 
-                    <div class="project-card mini">
+                    <article class="project-card mini">
                         <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-calculator"></i>
-                            </div>
+                            <div class="project-icons"><i class="fas fa-robot"></i></div>
                             <div class="project-links">
-                                <a href="https://c4calculator.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">Calculator</h4>
-                        <p class="project-description">Functional calculator with responsive design and keyboard support.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                            <span>HTML</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://c2currency.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">Currency Converter</h4>
-                        <p class="project-description">Real-time currency conversion using exchange rate APIs.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>JavaScript</span>
-                            <span>API</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://weather-ctor.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">Weather App</h4>
-                        <p class="project-description">Weather information with detailed forecasts and location search.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>JavaScript</span>
-                            <span>Weather API</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://url-shorten.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">URL Shortener</h4>
-                        <p class="project-description">Python-based web app for converting long URLs into short links.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://lavbot.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="https://lavbot.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="AI Chatbot Live"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Lav-developer" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h4 class="project-title">AI Chatbot</h4>
-                        <p class="project-description">Intelligent chatbot powered by Google's Gemini AI model.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Gemini API</span>
-                            <span>Streamlit</span>
-                        </div>
-                    </div>
+                        <p class="project-description">Intelligent chatbot powered by Gemini API with Streamlit UI. Handles conversation context and streams responses.</p>
+                        <div class="project-tech"><span>Python</span><span>Gemini API</span><span>Streamlit</span></div>
+                    </article>
 
-                    <div class="project-card mini">
+                    <article class="project-card mini">
                         <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
+                            <div class="project-icons"><i class="fas fa-university"></i></div>
                             <div class="project-links">
-                                <a href="https://codevenom.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">Code Venom</h4>
-                        <p class="project-description">A college club website</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://dsmnru-pyq.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="https://dsmnru-pyq.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Lav-developer/PYQ" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h4 class="project-title">DSMNRU PYQs</h4>
-                        <p class="project-description">Dr. Shakuntala Misra National Rehabilitation University Lucknow PYQs finder website</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
+                        <p class="project-description">PYQ & syllabus finder for DSMNRU students. Search, filter, and access previous year papers — built for campus need.</p>
+                        <div class="project-tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+                    </article>
 
-                    <div class="project-card mini">
+                    <article class="project-card mini">
                         <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-phone"></i>
-                            </div>
+                            <div class="project-icons"><i class="fa-solid fa-code"></i></div>
                             <div class="project-links">
-                                <a href="https://phone-check.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="https://codevenom.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Lav-developer/Code-Venom" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">Code Venom</h4>
+                        <p class="project-description">College coding club website with events, team, and resources. Responsive, modern, built for community.</p>
+                        <div class="project-tech"><span>HTML</span><span>JavaScript</span><span>CSS</span></div>
+                    </article>
+
+                    <article class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons"><i class="fas fa-store"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Lav-developer/Tailor-Find" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">TailorFind</h4>
+                        <p class="project-description">Find nearby tailors for custom clothing, alterations, and repairs. Location-aware discovery concept.</p>
+                        <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </article>
+
+                    <article class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons"><i class="fas fa-link"></i></div>
+                            <div class="project-links">
+                                <a href="https://url-shorten.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="project-title">URL Shortener</h4>
+                        <p class="project-description">Python-based web app converting long URLs into short links with API integration and clean UI.</p>
+                        <div class="project-tech"><span>Python</span><span>Streamlit</span><span>API</span></div>
+                    </article>
+
+                    <article class="project-card mini">
+                        <div class="project-header">
+                            <div class="project-icons"><i class="fas fa-phone"></i></div>
+                            <div class="project-links">
+                                <a href="https://phone-check.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <h4 class="project-title">Phone Number Lookup</h4>
-                        <p class="project-description">This web app based on basically phone number lookup technique. It helps to search about the number wheather it is spam or not.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                        </div>
-                    </div>
+                        <p class="project-description">Lookup utility to check number reputation and identify potential spam — built with Streamlit.</p>
+                        <div class="project-tech"><span>Python</span><span>Streamlit</span></div>
+                    </article>
 
-                    <div class="project-card mini">
+                    <article class="project-card mini">
                         <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-video"></i>
-                            </div>
+                            <div class="project-icons"><i class="fas fa-qrcode"></i></div>
                             <div class="project-links">
-                                <a href="https://lavgram.streamlit.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
+                                <a href="https://qr-generate.streamlit.app" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
-                        <h4 class="project-title">Insta Reel Downloader</h4>
-                        <p class="project-description">Download any instagram reel just pasting the link of reel. no need to download instagram. Preview also available before downloading.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                        </div>
-                    </div>
+                        <h4 class="project-title">QR Code Generator</h4>
+                        <p class="project-description">Secure QR generator for WiFi, email, SMS, and arbitrary data. No tracking, client-side generation.</p>
+                        <div class="project-tech"><span>Python</span><span>Streamlit</span></div>
+                    </article>
+                </div>
+                <p class="other-note">Beginner demos like Calculator, Rock Paper Scissors, Weather App remain on GitHub but are deprioritized to keep recruiter focus on engineering depth.</p>
+            </div>
+        </div>
+    </section>
 
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fas fa-qrcode"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://qr-generate.streamlit.app" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">Qr Code Generator</h4>
-                        <p class="project-description">This tool help to create any qr which is secure. Any type of data can be stored through qr, data can be WIFI-Pass,Email,SMS,anything.</p>
-                        <div class="project-tech">
-                            <span>Streamlit</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card mini">
-                        <div class="project-header">
-                            <div class="project-icons">
-                                <i class="fa-solid fa-clipboard"></i>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://cgpa-calculate.streamlit.app/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="project-title">CGPA Calculator</h4>
-                        <p class="project-description">This project will help to students while calculating their cgpa. It will provide explanation how it being calculated.</p>
-                        <div class="project-tech">
-                            <span>Streamlit</span>
-                            <span>Python</span>
-                            <span>Pandas Py</span>
-                        </div>
-                    </div>
+    <!-- Engineering Highlights -->
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-number">06.</span> Engineering Highlights</h2>
+                <p class="section-subtitle">Verified achievements, not filler</p>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>RIFT '26 Hackathon — Real-world problem solving</h3>
+                    <p>Built PharmaGuard: genotype-aware VCF analysis with Gemini narratives. Participated in Physics Wallah Institute of Innovation hackathon focused on production-ready solutions.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Hack with Uttar Pradesh 2025 — Grand Finale Qualified</h3>
+                    <p>Cleared Round 1 & 2, qualified for Grand Finale (0to1). Chandigarh University state-level hackathon.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>Elite Coder Winter of Code (ECWoC)</h3>
+                    <p>Contributed to open-source projects during winter of code, practicing collaborative development and code reviews.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                    <h3>Ranchi Hacks — Screening Qualified</h3>
+                    <p>Qualified screening round of Ranchi Hacks by Google Developer Groups Ranchi. Built under time constraints.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Adobe India Hackathon — Coding + MCQ</h3>
+                    <p>Participated in Adobe India online assessment combining MCQs and coding round.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Research Presentations — DSMNRU</h3>
+                    <p>Participated in NCMPCS, CONASH, and Biorehab conferences/workshops organized by DSMNRU faculties — academic exposure.</p>
                 </div>
             </div>
         </div>
@@ -507,419 +593,345 @@
     <section id="certificates" class="certificates">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">03.</span>
-                    Certificates & Achievements
-                </h2>
+                <h2 class="section-title"><span class="section-number">07.</span> Certificates & Achievements</h2>
+                <p class="section-subtitle">Click to view — supports images and PDFs</p>
             </div>
-            
-            <div class="certificates-tabs">
-                <button class="tab-button active" data-tab="hackathons">Hackathons</button>
-                <button class="tab-button" data-tab="courses">Courses & Internships</button>
-                <button class="tab-button" data-tab="competitions">Competitions</button>
-                <button class="tab-button" data-tab="researches">Researches</button>
+
+            <div class="certificates-tabs" role="tablist" aria-label="Certificate categories">
+                <button class="tab-button active" data-tab="all" role="tab" aria-selected="true">All</button>
+                <button class="tab-button" data-tab="hackathons" role="tab" aria-selected="false">Hackathons</button>
+                <button class="tab-button" data-tab="internships" role="tab" aria-selected="false">Internships</button>
+                <button class="tab-button" data-tab="courses" role="tab" aria-selected="false">Courses</button>
+                <button class="tab-button" data-tab="achievements" role="tab" aria-selected="false">Achievements</button>
             </div>
 
             <div class="certificates-content">
-                <div class="tab-content active" id="hackathons">
-                    <div class="certificates-grid">
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/AIF-Hackathon.jpg" alt="AI Finance Hackathon Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/AIF-Hackathon.jpg">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>AI Finance Hackathon</h3>
-                                <p class="certificate-issuer">TechKriti (IIT Kanpur)</p>
-                                <p class="certificate-description">Participated in AI-focused hackathon developing innovative financial solutions.</p>
+                <div class="certificates-grid" id="certificates-grid">
+                    <!-- Hackathons -->
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/RIFT26-Certificate-Lav-Kush.jpg" alt="RIFT 26 Hackathon certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/RIFT26-Certificate-Lav-Kush.jpg" aria-label="View RIFT 26 certificate"> <i class="fas fa-expand"></i> </button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>RIFT '26 Hackathon</h3>
+                            <p class="certificate-issuer">Physics Wallah Institute of Innovation • 2026</p>
+                            <p class="certificate-description">Real-world problem solving hackathon — built PharmaGuard AI pharmacogenomic platform.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/ISTD.png" alt="ISTD Online Hackathon Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/ISTD.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>ISTD Online Hackathon</h3>
-                                <p class="certificate-issuer">Lets Upgrade</p>
-                                <p class="certificate-description">Competed in online hackathon focusing on innovative tech solutions.</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/AIF-Hackathon.jpg" alt="AI Finance Hackathon certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/AIF-Hackathon.jpg" aria-label="View AI Finance Hackathon certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>AI Finance Hackathon</h3>
+                            <p class="certificate-issuer">TechKriti, IIT Kanpur</p>
+                            <p class="certificate-description">AI-focused hackathon developing innovative financial solutions.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/HP_Cert.jpg" alt="HP Power Lab Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/HP_Cert.jpg">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>HP Power Lab</h3>
-                                <p class="certificate-issuer">Hindustan Petroleum & Unstop</p>
-                                <p class="certificate-description">Participated in energy sector innovation challenge.</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/Hackwithuttarpradesh.png" alt="Hack with Uttar Pradesh certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Hackwithuttarpradesh.png" aria-label="View Hack with UP certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Hack With Uttar Pradesh 2025</h3>
+                            <p class="certificate-issuer">Chandigarh University • Grand Finale Qualified</p>
+                            <p class="certificate-description">Qualified Round 1 & 2, Grand Finale 0to1 hackathon.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/ISVE.png" alt="ISVE Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/ISVE.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>ISVE Hackathon</h3>
-                                <p class="certificate-issuer">Indian Society for Virtual Education</p>
-                                <p class="certificate-description">ISVE Hackathon Participation</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/RanchiHacks.png" alt="Ranchi Hacks certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/RanchiHacks.png" aria-label="View Ranchi Hacks certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Ranchi Hacks</h3>
+                            <p class="certificate-issuer">GDG Ranchi • Screening Qualified</p>
+                            <p class="certificate-description">Screening round qualification — time-bound hackathon.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Adobe_hackathon.png" alt="Adobe Hackathon Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Adobe_hackathon.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Adobe India Hackathon</h3>
-                                <p class="certificate-issuer">Adobe India</p>
-                                <p class="certificate-description">Participated in Adobe India online MCQ Assessment+coding round</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/Adobe_hackathon.png" alt="Adobe India Hackathon certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Adobe_hackathon.png" aria-label="View Adobe Hackathon certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Adobe India Hackathon</h3>
+                            <p class="certificate-issuer">Adobe India</p>
+                            <p class="certificate-description">Online MCQ + coding assessment.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Hackwithuttarpradesh.png" alt="Hack with UttarPradesh 2025 Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Hackwithuttarpradesh.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Hack With UttarPradesh 2025</h3>
-                                <p class="certificate-issuer">Chandigarh University</p>
-                                <p class="certificate-description">Certification of Hackathon 0to1 Grand Finale(Round 1,2 Qualified)</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/ISTD.png" alt="ISTD Online Hackathon certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/ISTD.png" aria-label="View ISTD Hackathon certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>ISTD Online Hackathon</h3>
+                            <p class="certificate-issuer">Lets Upgrade</p>
+                            <p class="certificate-description">Innovative tech solutions hackathon.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/RanchiHacks.png" alt="Hack with UttarPradesh 2025 Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/RanchiHacks.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Ranchi Hacks</h3>
-                                <p class="certificate-issuer">Google Developer Groups Ranchi</p>
-                                <p class="certificate-description">Certification of Ranchi Hacks Screening Round Qualify</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/HP_Cert.jpg" alt="HP Power Lab certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/HP_Cert.jpg" aria-label="View HP Power Lab certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>HP Power Lab</h3>
+                            <p class="certificate-issuer">Hindustan Petroleum & Unstop</p>
+                            <p class="certificate-description">Energy sector innovation challenge.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Rift.jpg" alt="RIFT Hackathon Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/RIFT26-Certificate-Lav-Kush.jpg">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>RIFT '26 Hackathon</h3>
-                                <p class="certificate-issuer">Physics Wallah Institute of Innovation</p>
-                                <p class="certificate-description">Participated in real world problem solving hackathon and developing innovative solutions.</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/ISVE.png" alt="ISVE Hackathon certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/ISVE.png" aria-label="View ISVE certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>ISVE Hackathon</h3>
+                            <p class="certificate-issuer">Indian Society for Virtual Education</p>
+                            <p class="certificate-description">Virtual education innovation hackathon.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/ECWoC.png" alt="ECWoC Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/ECWoC.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Elite Coder Winter of Code (ECWoC)</h3>
-                                <p class="certificate-issuer">Elite Coders</p>
-                                <p class="certificate-description">Participated in Elite Coder Winter of Code (ECWoC) and contributed to open-source projects.</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/ECWoC.png" alt="ECWoC certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/ECWoC.png" aria-label="View ECWoC certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Elite Coder Winter of Code</h3>
+                            <p class="certificate-issuer">Elite Coders</p>
+                            <p class="certificate-description">Open-source contribution winter of code.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Paranox_2.0.png" alt="Paranox 2.0 Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Paranox_2.0.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Paranox 2.0</h3>
-                                <p class="certificate-issuer">TechXNinjas</p>
-                                <p class="certificate-description">Participated in the Paranox 2.0 -3Month National Level Innovation hackathon.</p>
+                    <article class="certificate-card" data-category="hackathons">
+                        <div class="certificate-image">
+                            <img src="images/Paranox_2.0.png" alt="Paranox 2.0 certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Paranox_2.0.png" aria-label="View Paranox certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="certificate-content">
+                            <h3>Paranox 2.0</h3>
+                            <p class="certificate-issuer">TechXNinjas • National Level</p>
+                            <p class="certificate-description">3-month national innovation hackathon.</p>
+                        </div>
+                    </article>
 
-                <div class="tab-content" id="courses">
-                    <div class="certificates-grid">
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Hack2skill-Certificate.png" alt="Chatbot Development Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Hack2skill-Certificate.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Interactive Chatbot Development</h3>
-                                <p class="certificate-issuer">Hack2skill</p>
-                                <p class="certificate-description">Building Interactive Chatbot with React JS & GPT API</p>
+                    <!-- Internships -->
+                    <article class="certificate-card" data-category="internships">
+                        <div class="certificate-image">
+                            <img src="images/Lab_mentix_web_certifcate.png" alt="Labmentix Web Developer Internship certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Lab_mentix_web_certifcate.png" aria-label="View Labmentix certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Web Developer Intern — Labmentix</h3>
+                            <p class="certificate-issuer">Labmentix Pvt Ltd • Sep-Oct 2025</p>
+                            <p class="certificate-description">1-month internship building real-time apps, Socket.IO, JWT, multiple projects.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/wcc.png" alt="Certificate of Excellence" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/wcc.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Excellence</h3>
-                                <p class="certificate-issuer">Unstop</p>
-                                <p class="certificate-description">Recognition for outstanding performance in competitive programming.</p>
+                    <article class="certificate-card" data-category="internships">
+                        <div class="certificate-image">
+                            <img src="images/PW_internship.png" alt="Gyaan-E PhysicsWallah internship certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/PW_internship.png" aria-label="View PW internship certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Marketing & Growth Team Lead — Gyaan-E</h3>
+                            <p class="certificate-issuer">PhysicsWallah • Nov 2025-Mar 2026</p>
+                            <p class="certificate-description">Growth team lead internship — leadership & peer guidance.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/PW.png" alt="Certificate of Excellence" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/PW.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Campus Ambassador Certificate</h3>
-                                <p class="certificate-issuer">Physics Wallah</p>
-                                <p class="certificate-description">Recognition for outstanding performance, leadership skills and ability to guide peers.</p>
+                    <article class="certificate-card" data-category="internships">
+                        <div class="certificate-image">
+                            <img src="images/PW.png" alt="PhysicsWallah Campus Ambassador certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/PW.png" aria-label="View PW Campus Ambassador certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Campus Ambassador — PhysicsWallah</h3>
+                            <p class="certificate-issuer">Physics Wallah</p>
+                            <p class="certificate-description">Leadership, peer guidance, and community building recognition.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Lab_mentix_web_certifcate.png" alt="Certificate of internship" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Lab_mentix_web_certifcate.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Internship</h3>
-                                <p class="certificate-issuer">Lab Mentix</p>
-                                <p class="certificate-description">Successfully completed a 01-month internship as a Web Developer Intern at Labmentix Pvt.
-                                Ltd (27 Sep 2025 - 27 Oct 2025) worked on multiple projects.</p>
+                    <!-- Courses -->
+                    <article class="certificate-card" data-category="courses">
+                        <div class="certificate-image">
+                            <img src="images/Hack2skill-Certificate.png" alt="Chatbot Development certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Hack2skill-Certificate.png" aria-label="View Hack2skill certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Interactive Chatbot Development</h3>
+                            <p class="certificate-issuer">Hack2skill • React + GPT API</p>
+                            <p class="certificate-description">Building chatbots with React and LLM APIs.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/JP_morgan_job_simulate.png" alt="Certificate of Job Simulation" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/JP_morgan_job_simulate.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Completion Software Engineering Job Simulation</h3>
-                                <p class="certificate-issuer">JPMorgan Chase & Co. with Forage</p>
-                                <p class="certificate-description">Successfully completed a job simulation as a Software Engineer at JPMorgan Chase & Co.</p>
+                    <article class="certificate-card" data-category="courses">
+                        <div class="certificate-image">
+                            <img src="images/JAVA.png" alt="Java Programming certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/JAVA.png" aria-label="View Java certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Java Programming — Beginner to Master</h3>
+                            <p class="certificate-issuer">Udemy • Abdul Bari</p>
+                            <p class="certificate-description">Core Java, OOP, collections, and problem-solving.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="/images/JAVA.png" alt="Java Completion Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/JAVA.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Completion</h3>
-                                <p class="certificate-issuer">Udemy (instructor- Abdul Bari Sir)</p>
-                                <p class="certificate-description">Learn Java Programming- Beginner to Master</p>
+                    <article class="certificate-card" data-category="courses">
+                        <div class="certificate-image">
+                            <img src="images/JP_morgan_job_simulate.png" alt="JPMorgan Chase job simulation certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/JP_morgan_job_simulate.png" aria-label="View JPMorgan certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Software Engineering Job Simulation</h3>
+                            <p class="certificate-issuer">JPMorgan Chase & Co. • Forage</p>
+                            <p class="certificate-description">Software engineering virtual experience — practical tasks.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="/images/PW_internship.png" alt="Java Completion Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/PW_internship.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Internship</h3>
-                                <p class="certificate-issuer">GYAAN-E by Physics Wallah</p>
-                                <p class="certificate-description">successfully completed Marketing and Growth Team Lead Internship With Gyaan-E at PhysicsWallah Pvt. Ltd. (04-11-2025 - 26-03-2026)</p>
+                    <!-- Achievements -->
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/wcc.png" alt="Certificate of Excellence Unstop" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/wcc.png" aria-label="View Certificate of Excellence"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="certificate-content">
+                            <h3>Certificate of Excellence</h3>
+                            <p class="certificate-issuer">Unstop • Competitive Programming</p>
+                            <p class="certificate-description">Outstanding performance in competitive programming challenges.</p>
+                        </div>
+                    </article>
 
-                <div class="tab-content" id="competitions">
-                    <div class="certificates-grid">
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Tresure_hunt.jpg" alt="Treasure Hunt Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Tresure_hunt.jpg">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Treasure Hunt Competition</h3>
-                                <p class="certificate-issuer">Unstop</p>
-                                <p class="certificate-description">Winner of technical treasure hunt competition involving coding challenges.</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/Tresure_hunt.jpg" alt="Treasure Hunt certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Tresure_hunt.jpg" aria-label="View Treasure Hunt certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Treasure Hunt Competition — Winner</h3>
+                            <p class="certificate-issuer">Unstop</p>
+                            <p class="certificate-description">Technical treasure hunt with coding challenges.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/wcc.png" alt="Coding Competition" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/wcc.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Coding Competition</h3>
-                                <p class="certificate-issuer">Unstop</p>
-                                <p class="certificate-description">Participated in international coding competition with algorithmic challenges.</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/WCH.jpg" alt="WCHL participation certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/WCH.jpg" aria-label="View WCHL certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>World Computer Hacker League 2025</h3>
+                            <p class="certificate-issuer">WCHL & ICP</p>
+                            <p class="certificate-description">Qualification round participation.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/WCH.jpg" alt="Coding Competition" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/WCH.jpg">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Participation</h3>
-                                <p class="certificate-issuer">WCHL and ICP</p>
-                                <p class="certificate-description">Participated in the qualification round of the World Computer Hacker League (WCHL) 2025</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/Lab_mentix_apptitude.png" alt="Labmentix aptitude test certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Lab_mentix_apptitude.png" aria-label="View Labmentix aptitude certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>Internship Common Aptitude Test</h3>
+                            <p class="certificate-issuer">Lab Mentix</p>
+                            <p class="certificate-description">Aptitude test for internship selection.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Lab_mentix_apptitude.png" alt="Coding Competition" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Lab_mentix_apptitude.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Participation</h3>
-                                <p class="certificate-issuer">Lab Mentix</p>
-                                <p class="certificate-description"> for participating in the Internship Common Aptitude Test.</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/NCMPCS.png" alt="NCMPCS participation certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/NCMPCS.png" aria-label="View NCMPCS certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="certificate-content">
+                            <h3>NCMPCS — Participation</h3>
+                            <p class="certificate-issuer">Dept. of CSE, FOET, DSMNRU</p>
+                            <p class="certificate-description">National conference on modern computing and problem solving.</p>
+                        </div>
+                    </article>
 
-                <div class="tab-content" id="researches">
-                    <div class="certificates-grid">
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/NCMPCS.png" alt="NCMPCS Certificate" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/NCMPCS.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Participation</h3>
-                                <p class="certificate-issuer">Dept. of CSE, F.O.E.T. DSMNRU </p>
-                                <p class="certificate-description">Winner of technical treasure hunt competition involving coding challenges.</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/CONASH.png" alt="CONASH certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/CONASH.png" aria-label="View CONASH certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
+                        <div class="certificate-content">
+                            <h3>CONASH — Certificate of Excellence</h3>
+                            <p class="certificate-issuer">Applied Science & Humanities, FOET, DSMNRU</p>
+                            <p class="certificate-description">Academic conference participation and presentation.</p>
+                        </div>
+                    </article>
 
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/CONASH.png" alt="Coding Competition" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/CONASH.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Excellence</h3>
-                                <p class="certificate-issuer">Dept. of Applied Science & Humanities, F.O.E.T. DSMNRU</p>
-                                <p class="certificate-description">Participated in international coding competition with algorithmic challenges.</p>
+                    <article class="certificate-card" data-category="achievements">
+                        <div class="certificate-image">
+                            <img src="images/Biorehab.png" alt="Biorehab certificate" loading="lazy">
+                            <div class="certificate-overlay">
+                                <button class="view-certificate" data-certificate="images/Biorehab.png" aria-label="View Biorehab certificate"><i class="fas fa-expand"></i></button>
                             </div>
                         </div>
-
-                        <div class="certificate-card">
-                            <div class="certificate-image">
-                                <img src="images/Biorehab.png" alt="Coding Competition" loading="lazy">
-                                <div class="certificate-overlay">
-                                    <button class="view-certificate" data-image="images/Biorehab.png">
-                                        <i class="fas fa-expand"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="certificate-content">
-                                <h3>Certificate of Participation</h3>
-                                <p class="certificate-issuer">Dept. of ECE, F.O.E.T. DSMNRU</p>
-                                <p class="certificate-description">Participated in the qualification round of the World Computer Hacker League (WCHL) 2025</p>
-                            </div>
+                        <div class="certificate-content">
+                            <h3>Biorehab — Participation</h3>
+                            <p class="certificate-issuer">Dept. of ECE, FOET, DSMNRU</p>
+                            <p class="certificate-description">Biomedical and rehabilitation technology workshop.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -929,58 +941,37 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">
-                    <span class="section-number">04.</span>
-                    Get In Touch
-                </h2>
+                <h2 class="section-title"><span class="section-number">08.</span> Get In Touch</h2>
+                <p class="section-subtitle">Have a project, internship opportunity, or idea? Let's connect.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-text">
-                    <h3>Let's build something amazing together</h3>
-                    <p>
-                        I'm always interested in new opportunities and exciting projects. 
-                        Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                    </p>
+                    <h3>Let's build something useful together</h3>
+                    <p>I'm open to internships, freelance product work, and collaborations on AI-powered tools and automation systems. Fast response on email — I read every message.</p>
                 </div>
                 <div class="contact-methods">
                     <a href="mailto:kush210431@gmail.com" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="method-content">
-                            <h4>Email</h4>
-                            <p>kush210431@gmail.com</p>
-                        </div>
+                        <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="method-content"><h4>Email</h4><p>kush210431@gmail.com</p></div>
                     </a>
-                    <a href="tel:+916394214116" class="contact-method">
-                        <div class="method-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="method-content">
-                            <h4>Phone</h4>
-                            <p>+91 6394214116</p>
-                        </div>
+                    <a href="https://github.com/Lav-developer" class="contact-method" target="_blank" rel="noopener noreferrer">
+                        <div class="method-icon"><i class="fab fa-github"></i></div>
+                        <div class="method-content"><h4>GitHub</h4><p>@Lav-developer</p></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lavkush-iet/" class="contact-method" target="_blank" rel="noopener noreferrer">
+                        <div class="method-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="method-content"><h4>LinkedIn</h4><p>lavkush-iet</p></div>
                     </a>
                     <a href="https://t.me/Lav_kushbot" class="contact-method" target="_blank" rel="noopener noreferrer">
-                        <div class="method-icon">
-                            <i class="fab fa-telegram"></i>
-                        </div>
-                        <div class="method-content">
-                            <h4>Telegram</h4>
-                            <p>@Lav_kushbot</p>
-                        </div>
+                        <div class="method-icon"><i class="fab fa-telegram"></i></div>
+                        <div class="method-content"><h4>Telegram</h4><p>@Lav_kushbot</p></div>
                     </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/lavkush-iet/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Lav-developer" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/Lavkush_iet" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                    <a href="https://www.linkedin.com/in/lavkush-iet/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Lav-developer" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/Lavkush_iet" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:kush210431@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -990,25 +981,37 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Lav Kush. Built with ❤️ and lots of ☕</p>
-                <p class="footer-tech">Designed & Built by Lav Kush</p>
+                <p>&copy; <span id="year"></span> Lav Kush. AI & Full-Stack Developer.</p>
+                <p class="footer-tech">Built with HTML/CSS/JS • Matrix + minimal glow • No framework bloat • <span id="build-note">Portfolio 2026</span></p>
             </div>
         </div>
     </footer>
 
-    <!-- Certificate Modal -->
-    <div id="certificate-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="modal-content">
-            <span class="modal-close" role="button" tabindex="0" aria-label="Close certificate">&times;</span>
-            <img id="modal-image" src="" alt="Certificate">
+    <!-- Certificate Modal — supports images + PDFs -->
+    <div id="certificate-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Close certificate viewer" type="button">&times;</button>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="" style="display:none;">
+                <iframe id="modal-pdf" title="Certificate PDF viewer" style="display:none;" frameborder="0"></iframe>
+                <div id="modal-error" style="display:none;" class="modal-error">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Unsupported certificate format. Please open in new tab.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span id="modal-title" class="modal-title"></span>
+                <div class="modal-actions">
+                    <a id="modal-open-new" href="#" target="_blank" rel="noopener noreferrer" class="modal-action-btn" style="display:none;"><i class="fas fa-external-link-alt"></i> Open in New Tab</a>
+                    <a id="modal-download" href="#" download class="modal-action-btn secondary" style="display:none;"><i class="fas fa-download"></i> Download</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Theme Toggle -->
-    <button class="theme-toggle" aria-label="Toggle theme">
-        <i class="fas fa-sun"></i>
-    </button>
+    <button class="theme-toggle" aria-label="Toggle theme" type="button"><i class="fas fa-sun"></i></button>
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
